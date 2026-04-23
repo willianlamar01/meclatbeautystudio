@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="M'Éclat Beauty Studio - Servicios de belleza premium: cejas, depilación facial, corporal y extensiones de pestañas." />
+
+  <title>M'Éclat Beauty Studio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="icon" type="image/png" href="imagen/skin-care.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- OVERLAY DEL MENÚ -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+  <!-- MENÚ LATERAL -->
+  <nav class="sidebar" id="sidebar" role="navigation" aria-label="Menú principal">
+    <button class="sidebar__close" id="sidebarClose" aria-label="Cerrar menú">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="sidebar__logo">
+      <span class="sidebar__logo-letter">M</span>
+      <span class="sidebar__logo-name">Éclat</span>
+      <span class="sidebar__logo-sub">Beauty Studio</span>
+    </div>
+    <ul class="sidebar__links">
+      <li><a href="#inicio" class="sidebar__link"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="#nosotros" class="sidebar__link"><i class="fa-solid fa-star"></i> Nosotros</a></li>
+      <li><a href="#servicios" class="sidebar__link"><i class="fa-solid fa-spa"></i> Servicios</a></li>
+      <li><a href="#reservar" class="sidebar__link"><i class="fa-solid fa-calendar-check"></i> Reservar Cita</a></li>
+      <li><a href="#contacto" class="sidebar__link"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+    </ul>
+    <div class="sidebar__social">
+      <a href="https://wa.me/18496500647" target="_blank" rel="noopener" aria-label="WhatsApp" class="sidebar__social-link">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/meclatbeautystudio" target="_blank" rel="noopener" aria-label="Instagram" class="sidebar__social-link">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+    <a href="#inicio" class="header__logo">
+      <span class="header__logo-letter">M</span><span class="header__logo-apostrophe">'</span><span class="header__logo-name">Éclat</span>
+    </a>
+    <nav class="header__nav" aria-label="Navegación desktop">
+      <a href="#inicio" class="header__nav-link">Inicio</a>
+      <a href="#nosotros" class="header__nav-link">Nosotros</a>
+      <a href="#servicios" class="header__nav-link">Servicios</a>
+      <a href="#reservar" class="header__nav-link">Reservar</a>
+      <a href="#contacto" class="header__nav-link">Contacto</a>
+    </nav>
+    <div class="header__social">
+      <a href="https://wa.me/18496500647" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/meclatbeautystudio" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+    <div class="hero__content">
+      <div class="hero__logo-wrap">
+        <div class="hero__logo-letter">M</div>
+        <div class="hero__logo-script">Éclat</div>
+        <div class="hero__logo-divider" aria-hidden="true"></div>
+        <div class="hero__logo-subtitle">BEAUTY STUDIO</div>
+      </div>
+      <p class="hero__tagline">Donde la elegancia y el cuidado se encuentran</p>
+      <a href="#servicios" class="hero__cta">
+        Ver Servicios
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <i class="fa-solid fa-angles-down"></i>
+    </div>
+  </section>
+
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <p class="section-label">Quiénes Somos</p>
+      <h2 class="section-title">M'Éclat Beauty Studio</h2>
+      <div class="gold-divider" aria-hidden="true"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+      <div class="about__grid">
+        <article class="about__card">
+          <div class="about__card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="about__card-title">¿Qué somos?</h3>
+          <p class="about__card-text">
+            M'Éclat Beauty Studio es un espacio de belleza premium dedicado a realzar tu esencia natural.
+            Ofrecemos servicios especializados en cejas, depilación facial, depilación corporal y extensiones
+            de pestañas, aplicados con técnicas de vanguardia y los productos de mayor calidad del mercado.
+            Cada visita es una experiencia diseñada para que salgas sintiéndote radiante y segura.
+          </p>
+        </article>
+        <article class="about__card">
+          <div class="about__card-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3 class="about__card-title">Nuestra Misión</h3>
+          <p class="about__card-text">
+            Nuestra misión es potenciar la belleza única de cada persona a través de un servicio personalizado,
+            profesional y lleno de calidez. Nos comprometemos a brindar resultados impecables en un ambiente
+            exclusivo, donde cada clienta se sienta valorada, confiada y absolutamente luminosa.
+          </p>
+        </article>
+        <article class="about__card">
+          <div class="about__card-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3 class="about__card-title">¿Por qué elegirnos?</h3>
+          <p class="about__card-text">
+            Combinamos experiencia, pasión y atención al detalle en cada tratamiento. Utilizamos materiales
+            hipoalergénicos y técnicas seguras para cuidar tu piel. Nos adaptamos a tu estilo y a lo que
+            realmente necesitas, porque creemos que la verdadera belleza empieza con bienestar.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <p class="section-label">Lo que ofrecemos</p>
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="gold-divider" aria-hidden="true"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+
+      <!-- Cejas -->
+      <div class="services__category">
+        <h3 class="services__category-title"><i class="fa-solid fa-eye"></i> Servicios de Cejas</h3>
+        <div class="services__cards">
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilaciondecejas.jpg" alt="Depilación de cejas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$250</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Depilación de Cejas</h4>
+              <p class="service-card__desc">Definición y forma perfecta mediante técnica de hilo o cera.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/tintadodecejas.jpeg" alt="Tintado de cejas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$400</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Tintado de Cejas</h4>
+              <p class="service-card__desc">Color intenso y duradero para unas cejas definidas y naturales.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/DiseñoDepilaciónTintado.png" alt="Diseño completo de cejas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$600</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Diseño + Depilación + Tintado</h4>
+              <p class="service-card__desc">Tratamiento completo: diseño personalizado, depilación y tintado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Depilación Facial -->
+      <div class="services__category">
+        <h3 class="services__category-title"><i class="fa-solid fa-face-smile"></i> Depilación Facial</h3>
+        <div class="services__cards">
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionbozo.jpg" alt="Depilación de bozo" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$250</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Bozo</h4>
+              <p class="service-card__desc">Eliminación suave del vello del labio superior con acabado sedoso.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionmenton.jpg" alt="Depilación de mentón" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$400</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Mentón</h4>
+              <p class="service-card__desc">Tratamiento preciso para el área del mentón con mínima irritación.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionrostrocompleto.jpg" alt="Depilación de rostro completo" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$750</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Rostro Completo</h4>
+              <p class="service-card__desc">Cejas + bozo + mentón. Piel radiante y libre de vello en un solo servicio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Depilación Corporal -->
+      <div class="services__category">
+        <h3 class="services__category-title"><i class="fa-solid fa-person"></i> Depilación Corporal</h3>
+        <div class="services__cards">
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionaxilas.jpg" alt="Depilación de axilas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$600</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Axilas</h4>
+              <p class="service-card__desc">Depilación rápida y efectiva para axilas suaves y sin irritación.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionbikini.jpg" alt="Depilación de bikini" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$700</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Bikini</h4>
+              <p class="service-card__desc">Depilación de la línea del bikini con técnica suave y segura.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionbrasilero.png" alt="Depilación brasileña" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$1,200</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Brasileño</h4>
+              <p class="service-card__desc">Eliminación completa del vello de la zona íntima con máxima higiene.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionmediapierna.jpg" alt="Depilación media pierna" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$600</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Media Pierna</h4>
+              <p class="service-card__desc">Depilación desde la rodilla hasta el tobillo para piel tersa.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/depilacionpiernacompleta.jpg" alt="Depilación piernas completas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$1,200</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Piernas Completas</h4>
+              <p class="service-card__desc">Tratamiento integral de piernas para una piel impecable de arriba a abajo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Extensiones de Pestañas -->
+      <div class="services__category">
+        <h3 class="services__category-title"><i class="fa-solid fa-eye"></i> Extensiones de Pestañas</h3>
+        <div class="services__cards">
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/extensicionesclasicas.jpg" alt="Extensiones clásicas de pestañas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$1,700</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Clásicas</h4>
+              <p class="service-card__desc">Una extensión por pestaña natural. Resultado elegante y sutil.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/hibridas.jpg" alt="Extensiones híbridas de pestañas" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$2,500</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Híbridas</h4>
+              <p class="service-card__desc">Mezcla de clásicas y volumen para un look texturizado y glamoroso.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__img-wrap">
+              <img src="imagen/Volumen(2D–5D).jpg" alt="Extensiones volumen 2D-5D" class="service-card__img" loading="lazy" />
+              <div class="service-card__price">RD$3,500</div>
+            </div>
+            <div class="service-card__body">
+              <h4 class="service-card__name">Volumen (2D–5D)</h4>
+              <p class="service-card__desc">Abanico de pestañas para un efecto dramático, lleno y espectacular.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN RESERVAR CITA (NUEVA)
+  ============================================================ -->
+  <section class="booking" id="reservar">
+    <div class="container">
+
+      <p class="section-label">Agenda tu momento</p>
+      <h2 class="section-title">Reservar Cita</h2>
+      <div class="gold-divider" aria-hidden="true"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+
+      <div class="booking__wrap">
+
+        <div class="booking__intro reveal">
+          <i class="fa-brands fa-whatsapp booking__intro-icon"></i>
+          <p>Completa el formulario y tu solicitud se enviará directamente a nuestro WhatsApp. Te confirmaremos la cita a la brevedad.</p>
+        </div>
+
+        <form class="booking__form reveal reveal-d1" id="bookingForm" novalidate>
+
+          <!-- Nombre -->
+          <div class="booking__field">
+            <label class="booking__label" for="bookingName">
+              <i class="fa-solid fa-user"></i> Tu nombre
+            </label>
+            <input
+              type="text"
+              id="bookingName"
+              class="booking__input"
+              placeholder=""
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Servicio -->
+          <div class="booking__field">
+            <label class="booking__label" for="bookingService">
+              <i class="fa-solid fa-spa"></i> Servicio deseado
+            </label>
+            <select id="bookingService" class="booking__input booking__select" required>
+              <option value="" disabled selected>Selecciona un servicio…</option>
+              <optgroup label="✦ Servicios de Cejas">
+                <option value="Depilación de Cejas (RD$250)">Depilación de Cejas — RD$250</option>
+                <option value="Tintado de Cejas (RD$400)">Tintado de Cejas — RD$400</option>
+                <option value="Diseño + Depilación + Tintado (RD$600)">Diseño + Depilación + Tintado — RD$600</option>
+              </optgroup>
+              <optgroup label="✦ Depilación Facial">
+                <option value="Depilación de Bozo (RD$250)">Bozo — RD$250</option>
+                <option value="Depilación de Mentón (RD$400)">Mentón — RD$400</option>
+                <option value="Depilación Rostro Completo (RD$750)">Rostro Completo — RD$750</option>
+              </optgroup>
+              <optgroup label="✦ Depilación Corporal">
+                <option value="Depilación de Axilas (RD$600)">Axilas — RD$600</option>
+                <option value="Depilación de Bikini (RD$700)">Bikini — RD$700</option>
+                <option value="Depilación Brasileño (RD$1,200)">Brasileño — RD$1,200</option>
+                <option value="Depilación Media Pierna (RD$600)">Media Pierna — RD$600</option>
+                <option value="Depilación Piernas Completas (RD$1,200)">Piernas Completas — RD$1,200</option>
+              </optgroup>
+              <optgroup label="✦ Extensiones de Pestañas">
+                <option value="Extensiones Clásicas (RD$1,700)">Clásicas — RD$1,700</option>
+                <option value="Extensiones Híbridas (RD$2,500)">Híbridas — RD$2,500</option>
+                <option value="Extensiones Volumen 2D-5D (RD$3,500)">Volumen 2D–5D — RD$3,500</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Fecha y Hora (fila) -->
+          <div class="booking__row">
+            <div class="booking__field">
+              <label class="booking__label" for="bookingDate">
+                <i class="fa-solid fa-calendar"></i> Fecha
+              </label>
+              <input
+                type="date"
+                id="bookingDate"
+                class="booking__input"
+                required
+              />
+            </div>
+            <div class="booking__field">
+              <label class="booking__label" for="bookingTime">
+                <i class="fa-solid fa-clock"></i> Hora
+              </label>
+              <input
+                type="time"
+                id="bookingTime"
+                class="booking__input"
+                min="08:00"
+                max="20:00"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Nota opcional -->
+          <div class="booking__field">
+            <label class="booking__label" for="bookingNote">
+              <i class="fa-solid fa-comment"></i> Nota adicional <span class="booking__optional">(opcional)</span>
+            </label>
+            <textarea
+              id="bookingNote"
+              class="booking__input booking__textarea"
+              placeholder="¿Algo que debamos saber? Alergias, preferencias…"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <!-- Botón enviar -->
+          <button type="submit" class="booking__submit btn btn--gold" id="bookingSubmit">
+            <i class="fa-brands fa-whatsapp"></i>
+            Enviar Solicitud de Cita
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MODAL DE ÉXITO (animación post-envío)
+  ============================================================ -->
+  <div class="success-overlay" id="successOverlay" aria-hidden="true">
+    <div class="success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+
+      <!-- Partículas confetti dorado -->
+      <canvas class="success-canvas" id="successCanvas" aria-hidden="true"></canvas>
+
+      <!-- Ícono animado -->
+      <div class="success-icon-wrap">
+        <svg class="success-checkmark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="success-checkmark__circle" cx="28" cy="28" r="26" stroke="#c9a84c" stroke-width="2"/>
+          <path class="success-checkmark__check" d="M16 28 L24 36 L40 20" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h3 class="success-title" id="successTitle">¡Cita Solicitada!</h3>
+      <p class="success-sub">Tu solicitud fue enviada a WhatsApp. Te confirmaremos en breve, <strong id="successName"></strong>.</p>
+
+      <div class="success-detail" id="successDetail"></div>
+
+      <button class="success-btn btn btn--gold" id="successClose">
+        <i class="fa-solid fa-check"></i> Perfecto, ¡gracias!
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <p class="section-label">Reserva tu cita</p>
+      <h2 class="section-title">Contáctanos</h2>
+      <div class="gold-divider" aria-hidden="true"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact__item-text">
+              <span class="contact__item-label">WhatsApp</span>
+              <a href="https://wa.me/18496500647" target="_blank" rel="noopener" class="contact__item-value">849-650-0647</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact__item-text">
+              <span class="contact__item-label">Instagram</span>
+              <a href="https://instagram.com/meclatbeautystudio" target="_blank" rel="noopener" class="contact__item-value">@meclatbeautystudio</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__cta">
+          <a href="https://wa.me/18496500647?text=Hola!%20Me%20gustaría%20reservar%20una%20cita%20en%20M'Éclat%20Beauty%20Studio" target="_blank" rel="noopener" class="btn btn--whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Reservar por WhatsApp
+          </a>
+          <a href="https://instagram.com/meclatbeautystudio" target="_blank" rel="noopener" class="btn btn--instagram">
+            <i class="fa-brands fa-instagram"></i> Seguir en Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <span class="footer__logo-letter">M</span><span class="footer__logo-apostrophe">'</span><span class="footer__logo-name">Éclat</span>
+        <span class="footer__logo-sub">BEAUTY STUDIO</span>
+      </div>
+      <nav class="footer__links" aria-label="Links del footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#reservar">Reservar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://wa.me/18496500647" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/meclatbeautystudio" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="footer__copy">&copy; 2025 M'Éclat Beauty Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a
+    href="https://wa.me/18496500647?text=Hola!%20Me%20gustaría%20reservar%20una%20cita%20en%20M'Éclat%20Beauty%20Studio"
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-float"
+    aria-label="Contáctanos por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
